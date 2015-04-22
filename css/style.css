@@ -1,0 +1,416 @@
+body {
+  margin: auto; }
+
+header {
+  height: 600px; }
+  header .wrapper {
+    height: 600px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    background-image: url(/img/179H.jpg);
+    background-width: 100%;
+    background-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden; }
+    header .wrapper nav {
+      margin-right: 20%; }
+      header .wrapper nav a {
+        text-decoration: none;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        float: right;
+        padding: 15px;
+        color: #6F4D4D; }
+        header .wrapper nav a:hover {
+          color: #000; }
+    header .wrapper .logo {
+      height: 95px;
+      width: 113px;
+      position: absolute;
+      margin: 40px 20px;
+      opacity: 0.6;
+      cursor: pointer;
+      background-image: url(/img/fb1.png);
+      background-width: 100%;
+      background-height: 100%;
+      background-size: cover; }
+    header .wrapper .artist {
+      height: 50%;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 52px;
+      letter-spacing: 0.05em;
+      color: #6F4D4D;
+      position: absolute;
+      top: 30%; }
+    header .wrapper .text-name {
+      border: 10px solid #6F4D4D;
+      display: inline-block; }
+
+section {
+  text-align: center;
+  height: 750px;
+  width: 100%;
+  background-color: #F5EBDF; }
+  section .myself {
+    margin: 30px;
+    display: inline-block;
+    width: 316px;
+    height: 73px;
+    background-image: url(/img/myself.png); }
+  section .lock-up {
+    height: 600px;
+    width: 100%; }
+    section .lock-up .face-img {
+      display: inline-block;
+      width: 341px;
+      height: 512px;
+      border-radius: 100%;
+      margin: 20px;
+      opacity: 0.6;
+      background-image: url(/img/me1.jpeg); }
+    section .lock-up .skill-lockup {
+      display: inline-block;
+      float: left;
+      width: 60%;
+      height: 512px;
+      margin: 20px;
+      background-image: url(/img/qw1.png);
+      background-repeat: no-repeat;
+      background-size: 30% 50%; }
+      section .lock-up .skill-lockup h2 {
+        width: 110%; }
+    section .lock-up .skills {
+      width: 110%; }
+      section .lock-up .skills .skill-1 {
+        height: 128px;
+        width: 12%;
+        display: inline-block;
+        margin-top: 5px;
+        background-image: url(/img/skill-icons/skill-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      @media (max-width: 885px) {
+        section .lock-up .skills .skill-1 {
+          height: 128px;
+          width: 20%; } }
+      section .lock-up .skills .skill-2 {
+        height: 128px;
+        width: 12%;
+        display: inline-block;
+        margin-top: 5px;
+        background-image: url(/img/skill-icons/skill-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      @media (max-width: 885px) {
+        section .lock-up .skills .skill-2 {
+          height: 128px;
+          width: 20%; } }
+      section .lock-up .skills .skill-3 {
+        height: 128px;
+        width: 12%;
+        display: inline-block;
+        margin-top: 5px;
+        background-image: url(/img/skill-icons/skill-3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      @media (max-width: 885px) {
+        section .lock-up .skills .skill-3 {
+          height: 128px;
+          width: 20%; } }
+      section .lock-up .skills .skill-4 {
+        height: 128px;
+        width: 12%;
+        display: inline-block;
+        margin-top: 5px;
+        background-image: url(/img/skill-icons/skill-4.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      @media (max-width: 885px) {
+        section .lock-up .skills .skill-4 {
+          height: 128px;
+          width: 20%; } }
+      section .lock-up .skills .skill-5 {
+        height: 128px;
+        width: 12%;
+        display: inline-block;
+        margin-top: 5px;
+        background-image: url(/img/skill-icons/skill-5.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      @media (max-width: 885px) {
+        section .lock-up .skills .skill-5 {
+          height: 128px;
+          width: 20%; } }
+      section .lock-up .skills .skill-6 {
+        height: 128px;
+        width: 12%;
+        display: inline-block;
+        margin-top: 5px;
+        background-image: url(/img/skill-icons/skill-6.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      @media (max-width: 885px) {
+        section .lock-up .skills .skill-6 {
+          height: 128px;
+          width: 20%; } }
+      section .lock-up .skills .skill-7 {
+        height: 128px;
+        width: 12%;
+        display: inline-block;
+        margin-top: 5px;
+        background-image: url(/img/skill-icons/skill-7.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      @media (max-width: 885px) {
+        section .lock-up .skills .skill-7 {
+          height: 128px;
+          width: 20%; } }
+      section .lock-up .skills .skill-8 {
+        height: 128px;
+        width: 12%;
+        display: inline-block;
+        margin-top: 5px;
+        background-image: url(/img/skill-icons/skill-8.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      @media (max-width: 885px) {
+        section .lock-up .skills .skill-8 {
+          height: 128px;
+          width: 20%; } }
+
+article {
+  padding: 50px 0;
+  background-color: #F7F9FA;
+  height: 500px;
+  width: 100%;
+  text-align: right; }
+  article .creative-art {
+    height: 50%;
+    width: 100%;
+    display: flex; }
+    article .creative-art .stylish-1 {
+      height: 100%;
+      width: 50%;
+      background-image: url(/img/stylish-images/stylish-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    @media (max-width: 650px) {
+      article .creative-art .stylish-1 {
+        height: 150px;
+        width: 100%; } }
+    article .creative-art .stylish-2 {
+      height: 100%;
+      width: 50%;
+      background-image: url(/img/stylish-images/stylish-2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    @media (max-width: 650px) {
+      article .creative-art .stylish-2 {
+        height: 150px;
+        width: 100%; } }
+    article .creative-art .stylish-3 {
+      height: 100%;
+      width: 50%;
+      background-image: url(/img/stylish-images/stylish-3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    @media (max-width: 650px) {
+      article .creative-art .stylish-3 {
+        height: 150px;
+        width: 100%; } }
+    article .creative-art .stylish-4 {
+      height: 100%;
+      width: 50%;
+      background-image: url(/img/stylish-images/stylish-4.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    @media (max-width: 650px) {
+      article .creative-art .stylish-4 {
+        height: 150px;
+        width: 100%; } }
+  article .proj {
+    display: inline-block;
+    height: 75px;
+    width: 379px;
+    padding: 40px;
+    background-image: url(/img/proj.png);
+    background-repeat: no-repeat; }
+
+aside {
+  padding: 50px;
+  text-align: center;
+  background-color: #F7F9FA; }
+  aside h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px; }
+  aside form {
+    padding: 20px 0 100px 0; }
+    aside form textarea {
+      border: 3px solid;
+      height: 55px;
+      width: 40%; }
+      aside form textarea:focus {
+        outline: none;
+        border-color: #87683B; }
+    aside form input {
+      border: 3px solid;
+      height: 20px;
+      width: 15%; }
+    aside form [type="submit"] {
+      margin-top: 20px;
+      background: #F5EBDF;
+      height: 40px;
+      width: 60px; }
+      aside form [type="submit"]:focus {
+        outline: none;
+        border-color: #87683B; }
+    aside form label {
+      display: block;
+      margin: 0 20px; }
+      aside form label span {
+        display: block;
+        padding: 10px;
+        font-size: 24px;
+        text-transform: uppercase; }
+
+footer {
+  height: 100px;
+  width: 100%;
+  text-align: right;
+  background-image: url(/img/179H.jpg);
+  background-width: 100%;
+  background-height: 100%;
+  background-repeat: no-repeat; }
+  footer p {
+    display: inline-block;
+    font-size: 20px; }
+  footer .to-top {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin: 15px 15px 0 0;
+    cursor: pointer;
+    background-image: url(/img/up.png);
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+@media (max-width: 1200px) {
+  section {
+    height: 1300px; }
+
+  section .lock-up .skill-lockup {
+    width: 100%;
+    margin: 0;
+    background-image: none; }
+
+  section .lock-up .skill-lockup h2 {
+    width: 100%; }
+
+  section .lock-up .skills {
+    width: 100%; } }
+@media (max-width: 885px) {
+  section {
+    height: 1620px; }
+
+  header {
+    height: 400px; }
+
+  header .wrapper {
+    height: 400px; }
+
+  header .wrapper .logo {
+    display: none; }
+
+  aside form input {
+    width: 35%; }
+
+  aside form textarea {
+    width: 60%; }
+
+  [type="submit"] {
+    width: 100px; } }
+@media (max-width: 647px) {
+  header .wrapper nav {
+    margin: 3%;
+    display: block;
+    text-align: right;
+    height: 60px; }
+
+  header .wrapper nav a {
+    font-size: 20px;
+    padding: 5px;
+    display: block;
+    float: none; }
+
+  header .wrapper .artist {
+    font-size: 1.75em;
+    border: none;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em; }
+
+  section {
+    height: 1900px; }
+
+  section .myself {
+    background-size: cover;
+    margin: 20px;
+    height: 60px;
+    width: 250px; }
+
+  section .lock-up .face-img {
+    height: 375px;
+    width: 250px;
+    margin: 0; }
+
+  article {
+    height: 800px;
+    padding: 0; }
+
+  article .creative-art {
+    display: block; }
+
+  article .proj {
+    width: 280px;
+    height: 53px;
+    padding: 0;
+    background-size: cover; }
+
+  aside {
+    padding: 0; }
+
+  aside form input {
+    width: 60%; }
+
+  aside form textarea {
+    width: 80%; }
+
+  [type="submit"] {
+    width: 100px; }
+
+  footer {
+    height: 180px; } }
+
+/*# sourceMappingURL=style.css.map */
