@@ -5,13 +5,16 @@ $(window).scroll(function() {
 		'transform' : 'translate(0px, '+ wScroll +'%)'
 	});
 
-	/*if(wScroll > $('.skills').offset().top - ($(window).height() / 1.2)){
-		$('.skill').each(function(i){
+	if(wScroll > $('.skills').offset().top - ($(window).height() / 1.2)){
+		$('.skills').children().each(function(i){
 			setTimeout(function(){
-				$('.skills').eq(i).addClass('is-showing');
+				var styles = {
+					opacity: 1
+				};
+				$('.skills').children().eq(i).css(styles);
 			}, 150 * (i+1))
 		})
-	}*/
+	}
 });
 
 $('.logo').click(function() {

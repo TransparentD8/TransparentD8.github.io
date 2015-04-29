@@ -1,0 +1,40 @@
+article
+	padding: 50px 0
+	background-color: #F7F9FA
+	height: 500px
+	width: 100%
+	text-align: right
+
+
+	.creative-art
+		height: 50%
+		width: 100%
+		display: flex
+
+		@for $i from 1 through 4
+			.stylish-#{$i}
+				height: 100%
+				width: 50%
+				background: 
+					image: url(/img/stylish-images/stylish-#{$i}.jpg)
+					repeat: no-repeat
+					size: cover 
+					position: center
+
+				&:hover
+					border: 2px solid #E1EBB9
+					
+
+			@media (max-width: 650px)
+				.stylish-#{$i}
+					height: 150px
+					width: 100%
+
+	.proj
+		display: inline-block
+		height: 75px
+		width: 379px
+		padding: 40px
+		background:
+			image: url(/img/proj.png)
+			repeat: no-repeat
