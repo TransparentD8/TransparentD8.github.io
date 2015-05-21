@@ -1,6 +1,47 @@
 header 
 	height: 600px
 	
+	.menu-toggle 
+		width: 40px
+		height: 30px
+		position: absolute
+		top: 20px
+		right: 25px
+		cursor: pointer
+	
+		&.hidden 
+			display: none
+	
+		&.on 
+			.one 
+				@include transform(rotate(45deg) translate(7px, 7px))
+	
+
+			.two 
+				opacity: 0
+	
+
+			.three 
+				@include transform (rotate(-45deg) translate(8px, -10px))
+
+	
+		&.hidden 
+			display: none
+		
+
+	
+				
+		
+	
+	
+
+	.one ,.two ,.three
+		width: 100%
+		height: 5px
+		background: #6F4D4D
+		margin: 6px auto
+		backface-visibility: hidden
+		@include transition-duration(0.3s)
 	
 	.wrapper 
 		height: 600px
@@ -17,7 +58,13 @@ header
 
 		nav 
 			margin-right: 20%
+			display: none
+			&.on
+				display: block
+				
+
 			a 
+				@include transition-duration(0.5s)
 				text-decoration: none
 				display: inline-block
 				font-weight: 700
@@ -29,7 +76,21 @@ header
 				
 				&:hover 
 					color: #000
-					
+			a .hvr-grow 
+				display: inline-block
+				vertical-align: middle
+				transform: translateZ(0)
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+				backface-visibility: hidden
+				-moz-osx-font-smoothing: grayscale
+				transition-duration: 0.3s
+				transition-property: transform
+
+
+				.hvr-grow:hover,
+				.hvr-grow:focus,
+				.hvr-grow:active 
+					transform: scale(1.1)		
 		.logo
 			height: 95px
 			width: 113px

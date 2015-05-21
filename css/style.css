@@ -4,6 +4,40 @@ body {
 /* layout imports */
 header {
   height: 600px; }
+  header .menu-toggle {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer; }
+    header .menu-toggle.hidden {
+      display: none; }
+    header .menu-toggle.on .one {
+      -webkit-transform: rotate(45deg) translate(7px, 7px);
+      -moz-transform: rotate(45deg) translate(7px, 7px);
+      -ms-transform: rotate(45deg) translate(7px, 7px);
+      -o-transform: rotate(45deg) translate(7px, 7px);
+      transform: rotate(45deg) translate(7px, 7px); }
+    header .menu-toggle.on .two {
+      opacity: 0; }
+    header .menu-toggle.on .three {
+      -webkit-transform: rotate(-45deg) translate(8px, -10px);
+      -moz-transform: rotate(-45deg) translate(8px, -10px);
+      -ms-transform: rotate(-45deg) translate(8px, -10px);
+      -o-transform: rotate(-45deg) translate(8px, -10px);
+      transform: rotate(-45deg) translate(8px, -10px); }
+    header .menu-toggle.hidden {
+      display: none; }
+  header .one, header .two, header .three {
+    width: 100%;
+    height: 5px;
+    background: #6F4D4D;
+    margin: 6px auto;
+    backface-visibility: hidden;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
   header .wrapper {
     height: 600px;
     width: 100%;
@@ -16,8 +50,14 @@ header {
     background-attachment: fixed;
     overflow: hidden; }
     header .wrapper nav {
-      margin-right: 20%; }
+      margin-right: 20%;
+      display: none; }
+      header .wrapper nav.on {
+        display: block; }
       header .wrapper nav a {
+        -webkit-transition-duration: 0.5s;
+        -moz-transition-duration: 0.5s;
+        transition-duration: 0.5s;
         text-decoration: none;
         display: inline-block;
         font-weight: 700;
@@ -28,6 +68,19 @@ header {
         color: #6F4D4D; }
         header .wrapper nav a:hover {
           color: #000; }
+      header .wrapper nav a .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.3s;
+        transition-property: transform; }
+        header .wrapper nav a .hvr-grow .hvr-grow:hover,
+        header .wrapper nav a .hvr-grow .hvr-grow:focus,
+        header .wrapper nav a .hvr-grow .hvr-grow:active {
+          transform: scale(1.1); }
     header .wrapper .logo {
       height: 95px;
       width: 113px;
@@ -87,7 +140,8 @@ section {
       background-repeat: no-repeat;
       background-size: 30% 50%; }
       section .lock-up .skill-lockup h2 {
-        width: 110%; }
+        width: 110%;
+        margin-bottom: 10%; }
     section .lock-up .skills {
       width: 110%; }
       section .lock-up .skills .skill-1 {
@@ -211,56 +265,131 @@ article {
   text-align: right; }
   article .creative-art {
     height: 50%;
-    width: 100%;
-    display: flex; }
+    width: 100%; }
     article .creative-art .stylish-1 {
       height: 100%;
-      width: 50%;
+      width: 24%;
+      margin: 7px;
+      float: left;
+      position: relative;
+      overflow: hidden;
       background-image: url(/img/stylish-images/stylish-1.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; }
-      article .creative-art .stylish-1:hover {
-        border: 2px solid #E1EBB9; }
+      article .creative-art .stylish-1 figcaption {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        left: -100%;
+        bottom: 0;
+        background-image: url(/img/2.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden; }
+      article .creative-art .stylish-1:hover figcaption {
+        left: 0;
+        right: 0;
+        cursor: pointer; }
     @media (max-width: 650px) {
       article .creative-art .stylish-1 {
         height: 150px;
         width: 100%; } }
     article .creative-art .stylish-2 {
       height: 100%;
-      width: 50%;
+      width: 24%;
+      margin: 7px;
+      float: left;
+      position: relative;
+      overflow: hidden;
       background-image: url(/img/stylish-images/stylish-2.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; }
-      article .creative-art .stylish-2:hover {
-        border: 2px solid #E1EBB9; }
+      article .creative-art .stylish-2 figcaption {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        left: -100%;
+        bottom: 0;
+        background-image: url(/img/2.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden; }
+      article .creative-art .stylish-2:hover figcaption {
+        left: 0;
+        right: 0;
+        cursor: pointer; }
     @media (max-width: 650px) {
       article .creative-art .stylish-2 {
         height: 150px;
         width: 100%; } }
     article .creative-art .stylish-3 {
       height: 100%;
-      width: 50%;
+      width: 24%;
+      margin: 7px;
+      float: left;
+      position: relative;
+      overflow: hidden;
       background-image: url(/img/stylish-images/stylish-3.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; }
-      article .creative-art .stylish-3:hover {
-        border: 2px solid #E1EBB9; }
+      article .creative-art .stylish-3 figcaption {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        left: -100%;
+        bottom: 0;
+        background-image: url(/img/2.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden; }
+      article .creative-art .stylish-3:hover figcaption {
+        left: 0;
+        right: 0;
+        cursor: pointer; }
     @media (max-width: 650px) {
       article .creative-art .stylish-3 {
         height: 150px;
         width: 100%; } }
     article .creative-art .stylish-4 {
       height: 100%;
-      width: 50%;
+      width: 24%;
+      margin: 7px;
+      float: left;
+      position: relative;
+      overflow: hidden;
       background-image: url(/img/stylish-images/stylish-4.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; }
-      article .creative-art .stylish-4:hover {
-        border: 2px solid #E1EBB9; }
+      article .creative-art .stylish-4 figcaption {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        left: -100%;
+        bottom: 0;
+        background-image: url(/img/2.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden; }
+      article .creative-art .stylish-4:hover figcaption {
+        left: 0;
+        right: 0;
+        cursor: pointer; }
     @media (max-width: 650px) {
       article .creative-art .stylish-4 {
         height: 150px;
@@ -272,6 +401,19 @@ article {
     padding: 40px;
     background-image: url(/img/proj.png);
     background-repeat: no-repeat; }
+  article .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform; }
+    article .hvr-grow .hvr-grow:hover,
+    article .hvr-grow .hvr-grow:focus,
+    article .hvr-grow .hvr-grow:active {
+      transform: scale(1.1); }
 
 aside {
   text-align: center;
@@ -380,18 +522,6 @@ footer {
   [type="submit"] {
     width: 100px; } }
 @media (max-width: 647px) {
-  header .wrapper nav {
-    margin: 3%;
-    display: block;
-    text-align: right;
-    height: 60px; }
-
-  header .wrapper nav a {
-    font-size: 20px;
-    padding: 5px;
-    display: block;
-    float: none; }
-
   header .wrapper .artist {
     font-size: 1.75em;
     border: none;

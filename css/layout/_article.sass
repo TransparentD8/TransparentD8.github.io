@@ -4,26 +4,48 @@ article
 	height: 500px
 	width: 100%
 	text-align: right
-
+	
 
 	.creative-art
 		height: 50%
 		width: 100%
-		display: flex
+		
 
 		@for $i from 1 through 4
 			.stylish-#{$i}
 				height: 100%
-				width: 50%
+				width: 24%
+				margin: 7px
+				float: left
+				position: relative
+				overflow: hidden
 				background: 
 					image: url(/img/stylish-images/stylish-#{$i}.jpg)
 					repeat: no-repeat
 					size: cover 
 					position: center
+				
+		
+				figcaption
+					position: absolute
+					top: 0
+					right: 100%
+					left: -100%
+					bottom: 0
+					background: 
+						image: url(/img/2.png)
+						repeat: no-repeat
+						size: 50%
+						position: center
+					opacity: .7
+					transition: all 0.3s ease-in-out
+					overflow: hidden
 
 				&:hover
-					border: 2px solid #E1EBB9
-					
+					figcaption
+						left: 0
+						right: 0
+						cursor: pointer
 
 			@media (max-width: 650px)
 				.stylish-#{$i}
@@ -38,3 +60,21 @@ article
 		background:
 			image: url(/img/proj.png)
 			repeat: no-repeat
+
+
+
+	.hvr-grow 
+		display: inline-block
+		vertical-align: middle
+		transform: translateZ(0)
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+		backface-visibility: hidden
+		-moz-osx-font-smoothing: grayscale
+		transition-duration: 0.3s
+		transition-property: transform
+
+
+		.hvr-grow:hover,
+		.hvr-grow:focus,
+		.hvr-grow:active 
+			transform: scale(1.1)

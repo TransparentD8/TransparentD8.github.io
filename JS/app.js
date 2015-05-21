@@ -1,3 +1,9 @@
+$(".menu-toggle").on('click', function() {
+  $(this).toggleClass("on");
+  $('.menu-section').toggleClass("on");
+  $("#a").toggleClass('on');
+});
+
 $(window).scroll(function() {
 	var wScroll = $(this).scrollTop()
 	
