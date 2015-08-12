@@ -14,9 +14,8 @@ aside
 		
 		textarea
 			border: 3px solid 
-			height: 55px
-			width: 40%
-			padding: 6px
+			height: 100%
+			width: 100%
 			font:
 				size: 20px
 				style: Sans-serif
@@ -28,20 +27,18 @@ aside
 
 		input
 			border: 3px solid 
-			height: 20px
-			width: 15%
+			height: 100%
+			width: 100%
 			font:
 				size: 16px
 				style: Sans-serif
 				weight: 500
-			padding: 4px
 
 			&:focus 
 				outline: none
 				border-color: #87683B
 
 		[type="submit"]
-			margin-top: 20px
 			background: #F5EBDF
 			height: 40px
 			width: 60px
@@ -54,11 +51,26 @@ aside
 
 		label
 			display: block
-			margin: 0 20px
-			
-
+			margin: 20px auto
 			span
-				display: block	
-				padding: 10px
-				font-size: 24px	
+				margin: 10px
 				text-transform: uppercase
+				display: block
+				font-size: 20px
+
+		.label-1
+			width: 250px
+		.label-2
+			width: 400px
+		.label-3
+			width: 60px	
+
+		@media (max-width: 500px)
+			.label-1
+				width: 150px
+
+			.label-2
+				width: 250px
+
+			.label-span	
+				font-size: 16px	

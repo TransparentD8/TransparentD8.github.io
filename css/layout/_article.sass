@@ -1,80 +1,54 @@
-article
-	padding: 50px 0
-	background-color: #F7F9FA
-	height: 500px
+.work 
 	width: 100%
-	text-align: right
-	
+	min-height: 700px
+	text-align: center	
+	background-color: #F7F9FA
+	padding-bottom: 150px
+	.case
+		display: inline-block
+		margin: 30px
 
-	.creative-art
-		height: 50%
+		h2
+			font-family: $georgia
+			color: #6F4D4D
+			letter-spacing: 1px
+	.examples 
+
 		width: 100%
-		
+		@include display(flex)
+		@include flex-direction(row)
+		@include justify-content(center)
+		@include align-items(center)
+		@include flex-wrap(wrap)
 
-		@for $i from 1 through 4
-			.stylish-#{$i}
-				height: 100%
-				width: 24%
-				margin: 7px
-				float: left
+		@for $i from 1 through 2
+			.example-#{$i}
+				height: 400px
+				width: 400px
 				position: relative
-				overflow: hidden
-				background: 
-					image: url(/img/stylish-images/stylish-#{$i}.jpg)
-					repeat: no-repeat
-					size: cover 
-					position: center
-				
-		
-				figcaption
-					position: absolute
-					top: 0
-					right: 100%
-					left: -100%
-					bottom: 0
-					background: 
-						image: url(/img/2.png)
-						repeat: no-repeat
-						size: 50%
-						position: center
-					opacity: .7
-					transition: all 0.3s ease-in-out
-					overflow: hidden
+				background-image: url("/img/work/work#{$i}.png")
+				background-position: center
+				background-size: 100%
+				background-repeat: no-repeat
+				margin: 30px 
+				border: 3px solid #F5EBDF
+				cursor: pointer
+				transition: all 0.3s ease-in-out
 
-				&:hover
-					figcaption
-						left: 0
-						right: 0
-						cursor: pointer
+				&:hover 
+					background-size: 110%
+					
 
-			@media (max-width: 650px)
-				.stylish-#{$i}
-					height: 150px
-					width: 100%
+					
 
-	.proj
-		display: inline-block
-		height: 75px
-		width: 379px
-		padding: 40px
-		background:
-			image: url(/img/proj.png)
-			repeat: no-repeat
+					h2 
+						display: inline-block
+						margin-top: 40px
+						font-weight: 100
 
+			@media (max-width: 500px)
+				.example-#{$i}
+					height: 300px
+					width: 300px
 
-
-	.hvr-grow 
-		display: inline-block
-		vertical-align: middle
-		transform: translateZ(0)
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0)
-		backface-visibility: hidden
-		-moz-osx-font-smoothing: grayscale
-		transition-duration: 0.3s
-		transition-property: transform
-
-
-		.hvr-grow:hover,
-		.hvr-grow:focus,
-		.hvr-grow:active 
-			transform: scale(1.1)
+						

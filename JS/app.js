@@ -5,11 +5,13 @@ $(".menu-toggle").on('click', function() {
 });
 
 $(window).scroll(function() {
-	var wScroll = $(this).scrollTop()
-	
-	$('.logo').css({
-		'transform' : 'translate(0px, '+ wScroll +'%)'
-	});
+	var wScroll = $(this).scrollTop();
+		windowWidth = $(window).width();
+	if (windowWidth > 1000) {
+		$('.logo').css({
+			'transform' : 'translate(0px, '+ wScroll +'%)'
+		});
+	};
 
 	if(wScroll > $('.skills').offset().top - ($(window).height() / 1.2)){
 		$('.skills').children().each(function(i){

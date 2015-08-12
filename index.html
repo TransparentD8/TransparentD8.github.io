@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 	<title>projj</title>
 </head>
 <body>
@@ -21,44 +22,52 @@
 		</nav>
 		<div class="logo"></div>
 		<div class="artist">
-			<h1 class="text-name">David art</h1>
+			<h1 class="text-name">David MZ</h1>
 		</div>
 	</div>
 </header>
 <section>
-	<div id="about" class="myself"></div>
-	<div class="lock-up">
-		<div class="face-img"></div>
-		<div class="skill-lockup">
-			<h2><span>Hi, my name's David Martirosyan and i’m a web developer based in Kirovohrad, Ukraine.</span>
-			<span>I've been interested in web development for a long time, but since I had a study to finish, I wasn't able to devote much time to it. Now that I finally graduated from Kirovohrad Flight Academy, I deeply immersed into Web Development. I'm willing to work hard and have as much experience as possible. </span>
-			<span>For now, my main skills and tools for development include the ones below. I like learning new stuff and improving upon the skills I already have.</span>
-			</h2>
-			
+	<div class="about-myself">
+		<div id="about" class="myself"></div>
+	</div>
 
-			<div class="skills" >
-				<div class="skill-1"></div>
-				<div class="skill-2"></div>
-				<div class="skill-3"></div>
-				<div class="skill-4"></div>
-				<div class="skill-5"></div>
-				<div class="skill-6"></div>
-				<div class="skill-7"></div>
-				<div class="skill-8"></div>
-			</div>
-			<h2><span>I currently work on various non-profit project for my friends. I'm looking forward to having friends and clients related to this industy, so if your one of those, please, do not hesitate to say Hi by submitting the form below.</span>
+	<div class="lock-up">
+		<div class="skill-lockup">
+			<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="72px" style="enable-background:new 0 0 32 24;" version="1.1" viewBox="0 0 32 24" width="96px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Layer_1"/><g id="left_x5F_quote"><g><path d="M32,24V12h-8c0-4.41,3.586-8,8-8V0c-6.617,0-12,5.383-12,12v12H32z" style="fill:grey;"/><path d="M12,24V12H4c0-4.41,3.586-8,8-8V0C5.383,0,0,5.383,0,12v12H12z" style="fill:grey;"/></g></g></svg>
+			<h2>Hi, my name's David Martirosyan and I’m a front-end developer based in Kiev, Ukraine.
+			I've been interested in web development for a long time, mostly in possibilities of javascipt. Now that I deeply immersed into Web Development, I'm willing to work hard and have as much experience as possible.
+			For now, my main skills and tools for development include the ones listed below. I like learning new stuff and improving upon the skills I already have.I currently work on various non-profit project for my friends. I'm looking forward to having friends and clients related to this industy, so if your one of those, please, do not hesitate to say Hi by submitting the form below.
+			</h2>
 		</div>
+		<div class="face-img"></div>
+	</div>
+
+	<div class="skills" >
+		<div class="skill-1"></div>
+		<div class="skill-2"></div>
+		<div class="skill-3"></div>
+		<div class="skill-4"></div>
+		<div class="skill-5"></div>
+		<div class="skill-6"></div>
+		<div class="skill-7"></div>
+		<div class="skill-8"></div>
+		<div class="skill-9"></div>
 	</div>
 	
 </section>
 
 <article>
-	<div id="work" class="proj"></div>
-	<div class="creative-art">
-		<div class="stylish-1"><figcaption></figcaption></div>
-		<div class="stylish-2"><figcaption></figcaption></div>
-		<div class="stylish-3"><figcaption></figcaption></div>
-		<div class="stylish-4"><figcaption></figcaption></div>
+	<div class="work" id="work">
+		<div class="case">
+			<h2>A couple of recent works built with Angular.js</h2>
+			<img src="/img/case.png" alt="">
+		</div>
+		<div class="examples">
+			<a href="http://cakehouse.s-host.net"><div class="example-1">
+			</div></a>
+			<a href="http://stylewatches.pp.ua/"><div class="example-2">
+			</div></a>
+		</div>
 	</div>
 </article>
 
@@ -66,11 +75,11 @@
 	<h2 id="contact">Let's work together</h2>
 	<form method="post" action="http://formspree.io/prozrachniy@gmail.com">
 
-	    <label><span>your email</span><input type="email" name="_replyto"></label>
+	    <label class="label-1"><span class="label-span">your email</span><input type="email" name="_replyto"></label>
  
-    	<label><span>your message</span><textarea name="body"></textarea></label>
+    	<label class="label-2"><span class="label-span">your message</span><textarea name="body"></textarea></label>
 
-    	<label><input type="submit" value="Send"></label>
+    	<label class="label-3"><input type="submit" value="Send"></label>
 
 	</form>
 </aside>
